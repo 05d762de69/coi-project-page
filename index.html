@@ -8,7 +8,6 @@
 
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Social preview (optional) -->
   <meta property="og:title" content="Project Name" />
   <meta property="og:description" content="One sentence on what the project does and why it matters." />
   <meta property="og:type" content="website" />
@@ -32,10 +31,10 @@
         <ul id="nav-list" class="nav-list">
           <li><a href="#intro">Introduction</a></li>
           <li><a href="#goal">Goal</a></li>
-          <li><a href="#paper">Paper</a></li>
           <li><a href="#survey">Survey</a></li>
-          <li><a href="#hub">Hub</a></li>
+          <li><a href="#paper">Paper</a></li>
           <li><a href="#people">People</a></li>
+          <li><a href="#hub">Hub</a></li>
         </ul>
       </nav>
     </div>
@@ -55,19 +54,10 @@
         </p>
 
         <div class="hero-actions">
-          <!-- External survey CTA -->
           <a class="button button-primary" href="https://YOUR-SURVEY-LINK.example" target="_blank" rel="noopener">
             Take the survey
           </a>
-
-          <!-- Main output -->
           <a class="button button-ghost" href="#paper">Read the paper</a>
-        </div>
-
-        <div class="meta-row" role="list" aria-label="Project highlights">
-          <div class="chip" role="listitem"><span class="chip-label">Duration</span> <span>8 min</span></div>
-          <div class="chip" role="listitem"><span class="chip-label">Audience</span> <span>Adults 18+</span></div>
-          <div class="chip" role="listitem"><span class="chip-label">Data</span> <span>Anonymous</span></div>
         </div>
       </div>
     </section>
@@ -75,28 +65,15 @@
     <section id="intro" class="section" aria-labelledby="intro-title">
       <div class="container">
         <h2 id="intro-title">Project introduction</h2>
-        <div class="two-col">
-          <div>
-            <p>
-              3 to 5 lines total. State the scientific context and the practical aim.
-              Avoid acronyms unless you define them once.
-            </p>
-            <ul class="bullets">
-              <li>What question you are answering.</li>
-              <li>What method you use, at a high level.</li>
-              <li>What output people should expect, like paper, dataset, tool.</li>
-            </ul>
-          </div>
-
-          <aside class="panel" aria-label="Key links">
-            <h3>Quick links</h3>
-            <ul class="link-list">
-              <li><a href="#paper">Featured paper</a></li>
-              <li><a href="https://YOUR-SURVEY-LINK.example" target="_blank" rel="noopener">Survey</a></li>
-              <li><a href="#hub">Psychology of Science Hub</a></li>
-            </ul>
-          </aside>
-        </div>
+        <p class="measure">
+          3 to 5 lines total. State the scientific context and the practical aim.
+          Avoid acronyms unless you define them once.
+        </p>
+        <ul class="bullets">
+          <li>What question you are answering.</li>
+          <li>What method you use, at a high level.</li>
+          <li>What output people should expect, like paper, dataset, tool.</li>
+        </ul>
       </div>
     </section>
 
@@ -121,35 +98,6 @@
             <p>One sentence on what will be shared, like open materials or code.</p>
           </article>
         </div>
-      </div>
-    </section>
-
-    <section id="paper" class="section" aria-labelledby="paper-title">
-      <div class="container">
-        <h2 id="paper-title">Paper reference</h2>
-
-        <article class="featured" aria-label="Featured paper">
-          <div class="featured-top">
-            <span class="badge">Featured output</span>
-            <span class="muted">Preprint or Journal . Year</span>
-          </div>
-
-          <h3 class="featured-title">Title of the main paper</h3>
-          <p class="muted">First Author, Second Author, …, Senior Author</p>
-
-          <p class="measure">
-            One sentence summary of the result or contribution. Keep it concrete and non-hyped.
-          </p>
-
-          <div class="featured-actions">
-            <a class="button button-primary" href="https://DOI-OR-PREPRINT.example" target="_blank" rel="noopener">
-              View paper
-            </a>
-            <a class="button button-ghost" href="https://PDF-LINK.example" target="_blank" rel="noopener">
-              Download PDF
-            </a>
-          </div>
-        </article>
       </div>
     </section>
 
@@ -184,17 +132,32 @@
       </div>
     </section>
 
-    <section id="hub" class="section" aria-labelledby="hub-title">
+    <section id="paper" class="section" aria-labelledby="paper-title">
       <div class="container">
-        <h2 id="hub-title">Psychology of Science Hub</h2>
-        <div class="panel">
+        <h2 id="paper-title">Paper reference</h2>
+
+        <article class="featured" aria-label="Featured paper">
+          <div class="featured-top">
+            <span class="badge">Featured output</span>
+            <span class="muted">Preprint or Journal . Year</span>
+          </div>
+
+          <h3 class="featured-title">Title of the main paper</h3>
+          <p class="muted">First Author, Second Author, …, Senior Author</p>
+
           <p class="measure">
-            One line on what the hub is. Then a single link.
+            One sentence summary of the result or contribution. Keep it concrete and non-hyped.
           </p>
-          <a class="button button-ghost" href="https://YOUR-HUB-LINK.example" target="_blank" rel="noopener">
-            Visit the hub
-          </a>
-        </div>
+
+          <div class="featured-actions">
+            <a class="button button-primary" href="https://DOI-OR-PREPRINT.example" target="_blank" rel="noopener">
+              View paper
+            </a>
+            <a class="button button-ghost" href="https://PDF-LINK.example" target="_blank" rel="noopener">
+              Download PDF
+            </a>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -251,6 +214,20 @@
         <p class="muted small">
           Tip: keep portraits consistent. Same aspect ratio, same crop, neutral background.
         </p>
+      </div>
+    </section>
+
+    <section id="hub" class="section" aria-labelledby="hub-title">
+      <div class="container">
+        <h2 id="hub-title">Psychology of Science Hub</h2>
+        <div class="panel">
+          <p class="measure">
+            One line on what the hub is. Then a single link.
+          </p>
+          <a class="button button-ghost" href="https://YOUR-HUB-LINK.example" target="_blank" rel="noopener">
+            Visit the hub
+          </a>
+        </div>
       </div>
     </section>
   </main>
