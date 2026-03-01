@@ -365,3 +365,14 @@ h3{
 
   .nav-list[data-open="true"]{ display: flex; }
 }
+/* Hide extras by default */
+.person.is-extra { display: none; }
+
+/* When expanded, show them (match your .person layout) */
+#people.is-expanded .person.is-extra { display: grid; }
+
+.people-controls{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
