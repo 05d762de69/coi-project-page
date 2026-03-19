@@ -376,3 +376,56 @@ h3{
   display: flex;
   justify-content: center;
 }
+.hero{
+  padding: 5rem 0 2.8rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-grid{
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-copy{
+  min-width: 0;
+}
+
+.hero-visual{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image{
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(16,24,40,0.08);
+  background: var(--panel2);
+}
+
+@media (max-width: 900px){
+  .hero-grid{
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hero-visual{
+    justify-content: flex-start;
+  }
+
+  .hero-image{
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 560px){
+  .hero-image{
+    max-width: 100%;
+  }
+}
